@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+<body style="height: 100%;">
+    <header>
+        <div class="container-header">
+            <div class="wrapper-header">
+                <div>
+                    <a href="">HESOYAM</a>
+                    <div class="wrapper-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="">Collection</a></li>
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <button id="humberger">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="wrapper-icon-check-out"><img class="check-out" src="assets/images/icon-cart.svg" alt=""></div>
+                    <div class="wrapper-icon-account"><img src="assets/images/image-avatar.png" alt=""></div>
+                </div>
+            </div>
+            <hr class="hr-header">
+        </div>
+
+    </header>
+    <!-- chart  -->
+    <div class="chart-wrapper">
+        <div class="chart-container">
+            <h4>Checkout</h4>
+            <hr>
+            <div class="chart-content">
+                <div>
+                    <img class="chart-img" src="assets/images/image-product-1-thumbnail.jpg" alt="">
+                    <div class="chart-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ex!</div>
+                    <img src="assets/images/icon-delete.svg" alt="" class="chart-icon"> 
+                </div>
+                <a href="" class="btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- end chart  -->
+    <section id="content">
+        <div class="container">
+            <div class="wrapper-content">
+                <div id="place-picture">
+                    <div class="mainPicture">
+                        <img class="main-image" src="assets/images/image-product-1.jpg" alt="">
+                    </div>
+
+                    <div class="thumbnail">
+                        <img class="thumbnail-item" src="assets/images/image-product-1-thumbnail.jpg" data-img="1"
+                            alt="">
+                        <img class="thumbnail-item" src="assets/images/image-product-2-thumbnail.jpg" data-img="2"
+                            alt="">
+                        <img class="thumbnail-item" src="assets/images/image-product-3-thumbnail.jpg" data-img="3"
+                            alt="">
+                        <img class="thumbnail-item" src="assets/images/image-product-4-thumbnail.jpg" data-img="4"
+                            alt="">
+                    </div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="assets/images/image-product-1.jpg" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/image-product-2.jpg" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/image-product-3.jpg" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/image-product-4.jpg" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/image-product-2.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div id="description">
+                    <h3 class="small-title">Sneaker Company</h3>
+                    <h1 class="title">
+                        fall limited edition Sneaker</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint suscipit tempore ratione culpa at
+                        architecto? Alias, perferendis repellendus exercitationem harum voluptas neque? Consectetur
+                        accusantium deleniti earum aperiam eligendi quaerat pariatur, praesentium expedita facere illo
+                        animi ea, culpa cumque quas necessitatibus optio quasi laudantium eum dolore. Adipisci illum
+                        totam cupiditate earum porro deleniti, maiores sapiente inventore amet aut praesentium autem,
+                        natus quod, cum a. Commodi incidunt sequi sunt explicabo cupiditate, alias iure debitis earum
+                        eaque vitae animi corporis temporibus, quae illum dicta laudantium! Quidem quaerat accusantium
+                        quae! Reprehenderit esse aliquid corporis magni laboriosam facere ut impedit iusto fugiat? Nemo,
+                        aspernatur maiores.</p>
+                    <div class="wrapper-price">
+                        <div class="price">
+                            <p>$125.00</p>
+                            <span>50%</span>
+                        </div>
+                        <div class="real-price">
+                            <strike>$250.000</strike>
+                        </div>
+                    </div>
+                    <div class="wrapper-chart">
+                        <div id="wrapperChart">
+                            <span id="minus"><img src="assets/images/icon-minus.svg" alt=""></span>
+                            <p id="resultChart" data-val=0>0</p>
+                            <span id="plus"><img src="assets/images/icon-plus.svg" alt=""></span>
+                        </div>
+                        <button>addChart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+
+        <div class="place">
+            <div class="swiperModal mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/image-product-1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/image-product-2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/image-product-3.jpg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/image-product-4.jpg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/images/image-product-2.jpg" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+            <div class="thumbnail thumbnail-modal">
+                <img class="thumbnail-item" src="assets/images/image-product-1-thumbnail.jpg" data-img="1" alt="">
+                <img class="thumbnail-item" src="assets/images/image-product-2-thumbnail.jpg" data-img="2" alt="">
+                <img class="thumbnail-item" src="assets/images/image-product-3-thumbnail.jpg" data-img="3" alt="">
+                <img class="thumbnail-item" src="assets/images/image-product-4-thumbnail.jpg" data-img="4" alt="">
+            </div>
+        </div>
+
+        <div id="caption"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // hendel humberger menu
+        const btn = document.getElementById("humberger");
+        const wrapperHeader = document.querySelector(".wrapper-header");
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            this.classList.toggle("active");
+            const parentElement = this.parentElement;
+            parentElement.classList.toggle("activeCon");
+
+        })
+        //end hendel humberger menu
+        // handle quantities chart
+        const wrapperChart = document.getElementById("wrapperChart");
+        const saveResult = document.getElementById("resultChart");
+        wrapperChart.addEventListener("click", function (e) {
+            const priorVal = parseInt(saveResult.dataset.val);
+            let result;
+            if (e.target.getAttribute("id") == "minus") {
+                result = priorVal - 1;
+            }
+            if (e.target.getAttribute("id") == "plus") {
+                result = priorVal + 1;
+            }
+            saveResult.dataset.val = result;
+            saveResult.innerText = result;
+
+
+        });
+        //end handle quantities chart
+
+        // thumbnail image
+        const wrapperThumbnail = document.getElementsByClassName("thumbnail")[0];
+        const mainImage = document.getElementsByClassName("main-image")[0];
+        let temporaryImg = null;
+        wrapperThumbnail.addEventListener("click", function (e) {
+            if (temporaryImg != null) {
+                temporaryImg.classList.remove("activeImg");
+                temporaryImg = null;
+            }
+            if (e.target.className.includes("thumbnail-item")) {
+
+                temporaryImg = e.target;
+                const clickedImg = e.target.dataset.img;
+                mainImage.src = `assets/images/image-product-${clickedImg}.jpg`;
+                e.target.classList.add("activeImg");
+
+            }
+
+
+        });
+        // edn thumbnail image
+        // event click mainImage
+        const modalImg = document.getElementById("myModal");
+        mainImage.addEventListener("click", function (e) {
+            modalImg.style.display = "block";
+        })
+        // event click mainImage
+        // img modal
+        const close = document.getElementsByClassName("close")[0];
+        close.addEventListener("click", function (e) {
+            e.preventDefault();
+            modalImg.style.display = "none";
+        })
+        // end img modal
+        // checkout
+        const wrapperCheckout=document.getElementsByClassName("wrapper-icon-check-out")[0];
+        const infoChart=document.querySelector(".chart-wrapper");
+        wrapperCheckout.addEventListener("click",function(e){
+            if(e.target.className.includes("check-out")){
+                infoChart.classList.toggle("active-check-out");
+                console.log("true");
+            }
+        })
+        // end checkout
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "none",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+</body>
+
+</html>
